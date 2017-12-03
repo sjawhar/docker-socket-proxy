@@ -27,9 +27,10 @@ docker run -d -p 2376:2376 \
 ```bash
 docker -H tcp://$HOST:2376 --tlsverify --tlscacert=ca.pem --tlscert=cert.pem --tlskey=key.pem info
 ```
+
 You can also use either of the provided docker-compose files as a starting point:
-    - [docker-compose.yml](https://github.com/sjawhar/docker-socket-proxy/blob/master/docker-compose.yml)
-    - [docker-compose.swarm.yml](https://github.com/sjawhar/docker-socket-proxy/blob/master/docker-compose.swarm.yml)
+- [docker-compose.yml](https://github.com/sjawhar/docker-socket-proxy/blob/master/docker-compose.yml)
+- [docker-compose.swarm.yml](https://github.com/sjawhar/docker-socket-proxy/blob/master/docker-compose.swarm.yml)
 
 
 ## Why?  
