@@ -48,6 +48,6 @@ Personally, I use it so that CI/CD build agents running on the intranet can secu
 - `LISTEN_SECURE`: Defaults to `true`, which enabled TLS. If `false`, disables TLS and uses `TCP-LISTEN`. **If you set `LISTEN_SECURE=false` and ingress traffic can reach this container, you make it much more likely that you're going to have a bad time.**
 
 ## Additional Commands
-Any commands using in `docker run` will be passed as options to socat. You can use this to customize things like verbosity (`-ddd`), log format (`-lmlocal2`), timeout interval (`-t 1000000`), and more. See the [socat docs](http://www.dest-unreach.org/socat/doc/socat.html) for more info.
+Any commands used in `docker run` will be passed as options to socat. You can use this to customize things like verbosity (`-ddd`), log format (`-lmlocal2`), timeout interval (`-t 1000000`), and more. See the [socat docs](http://www.dest-unreach.org/socat/doc/socat.html) for more info on available options.
 
 
