@@ -1,9 +1,14 @@
 ## Docker Socket Secure Proxy
-This simple Docker image uses socat to securely proxy TCP requests to the Docker daemon socket without having to reconfigure and relaunch the Docker daemon. It is designed to be highly configureable, and is compatible with both single-host and swarm mode Docker.
+This small but powerful Docker image uses socat to securely proxy TCP requests to the Docker daemon socket without having to reconfigure and relaunch the Docker daemon. It is designed to be highly configureable, and is compatible with both single-host and swarm mode Docker.
 
 By default, it uses port 2376, though this is also configurable simply by forwarding a different port on the host to the container. This image can also be run without TLS (see below), though that is obviously not so much with the security.
 
 Comments, issues, and PRs are always welcome. If this image doesn't quite fulfill your needs, let me know and maybe we can improve it!
+
+### What's Included
+- Alpine 3.6
+- Socat
+- That's it!
 
 ## Usage
 1. If you don't already have CA, server, and client certs and keys, you can find helpful instructions to create them in [the Docker docs](https://docs.docker.com/engine/security/https). When doing so, make sure you use a `$HOST` value that is the FQDN clients will be using to access the Docker host.
