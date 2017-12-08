@@ -12,6 +12,7 @@ ENV DOCKER_SOCKET=/var/run/docker.sock \
 EXPOSE $LISTEN_PORT
 
 COPY run.sh /
+RUN chmod +x /run.sh
 
 ENTRYPOINT ["/run.sh"]
-CMD ["-dd"]
+CMD ["-ddd"]
