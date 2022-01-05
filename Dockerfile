@@ -1,5 +1,8 @@
-FROM alpine:3.6
-RUN apk add --no-cache socat
+ARG ALPINE_VERSION=3.15.0
+FROM alpine:${ALPINE_VERSION}
+
+ARG SOCAT_VERSION=1.7.4.2-r0
+RUN apk add --no-cache socat=${SOCAT_VERSION}
 
 ENV DOCKER_SOCKET=/var/run/docker.sock \
     LISTEN_PORT=2376 \

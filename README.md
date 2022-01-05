@@ -6,7 +6,7 @@ By default, it uses port 2376, though this is also configurable simply by forwar
 Comments, issues, and PRs are always welcome. If this image doesn't quite fulfill your needs, let me know and maybe we can improve it!
 
 ### What's Included
-- Alpine 3.6
+- Alpine 3.15
 - Socat
 - That's it!
 
